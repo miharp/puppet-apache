@@ -5,3 +5,6 @@ apache::install_ensure: present
 apache::service_name: 'apache2'
 apache::service_ensure: 'running'
 apache::service_enable: true
+apache::vhosts_dir: '/etc/apache2/sites-available'
+apache::vhosts_owner: 'www-data'
+apache::vhosts_group: 'www-data'
